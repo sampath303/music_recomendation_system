@@ -5,8 +5,8 @@ from flask import Flask, request, render_template
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-client_id = "bb5eed6ca4e24dacba935b2c4df509aa"
-client_secret = "b3f295021ae940aab7627a69213b5f22"
+client_id = "Enter your client id here"
+client_secret = "Enter your client secret here"
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=client_id, client_secret=client_secret))
 
 df = pd.read_csv("C:\Python\Project\dataset.csv")
